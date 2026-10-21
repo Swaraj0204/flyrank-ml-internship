@@ -1,0 +1,11 @@
+{
+  "dataset_rows": 30000,
+  "eligible_pages": 17,
+  "eligible_pct": 0.06,
+  "score_definition": "impressions_90d for eligible pages",
+  "reason_code": "stale_but_visible",
+  "action": "REVIEW_REFRESH",
+  "rule": "days_since_last_update >= 180 AND impressions_90d >= 500",
+  "uses_trend_pct": false,
+  "uses_trend_direction": false
+}
