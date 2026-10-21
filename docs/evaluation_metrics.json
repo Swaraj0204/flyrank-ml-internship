@@ -1,0 +1,32 @@
+{
+  "research_question": "Can historical content/search signals rank content for future-decline review?",
+  "feature_window": "March 2026",
+  "outcome_window": "April 2026",
+  "target": "April impressions <= 80% of March impressions, with at least 100 impressions in both months",
+  "split": "GroupShuffleSplit by client, test_size=0.25, random_state=42",
+  "feature_columns": [
+    "log_march_impressions",
+    "log_march_clicks",
+    "march_ctr"
+  ],
+  "metrics": {
+    "Baseline: March impressions": {
+      "ROC_AUC": 0.5834858854936501,
+      "Average_Precision": 0.3462248614903615,
+      "Precision_at_20": 0.2
+    },
+    "Model: logistic regression": {
+      "ROC_AUC": 0.6679587244664767,
+      "Average_Precision": 0.46224581975050244,
+      "Precision_at_20": 0.6
+    }
+  },
+  "train_rows": 82325,
+  "test_rows": 6157,
+  "client_overlap": 0,
+  "limitations": [
+    "Only content observed in both months is included.",
+    "Future decline is an observed outcome, not a causal refresh effect.",
+    "Evaluation covers one temporal transition."
+  ]
+}

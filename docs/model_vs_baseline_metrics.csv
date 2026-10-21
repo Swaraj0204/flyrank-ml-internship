@@ -1,0 +1,3 @@
+,ROC_AUC,Average_Precision,Precision_at_20
+Baseline: March impressions,0.5834858854936501,0.3462248614903615,0.2
+Model: logistic regression,0.6679587244664767,0.46224581975050244,0.6

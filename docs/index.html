@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FlyRank SEO Research — ML Capstone</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #202938; }
+    header { border-bottom: 2px solid #dbe3ee; padding-bottom: 20px; }
+    h1 { line-height: 1.2; }
+    h2 { margin-top: 32px; }
+    .note { background: #f2f6fc; padding: 16px; border-radius: 8px; }
+    a { color: #1558b0; }
+    footer { margin-top: 40px; border-top: 1px solid #ddd; padding-top: 16px; color: #666; }
+  </style>
+</head>
+<body>
+  <header>
+    <p>FLYRANK · MACHINE LEARNING CAPSTONE</p>
+    <h1>Machine Learning for SEO Content Prioritization</h1>
+    <p>A reproducible research report on ranking content opportunities using observed performance data.</p>
+  </header>
+
+  <h2>Abstract</h2>
+  <p>This project develops a data-driven workflow for prioritizing SEO content actions. It combines historical content performance, leakage-aware feature construction, baseline comparisons, and ranked recommendations. Reported findings should be interpreted alongside the evaluation outputs linked below.</p>
+
+  <h2>Research objectives</h2>
+  <ul>
+    <li>Construct a consistent dataset from observed content-performance records.</li>
+    <li>Build features using information available at prediction time.</li>
+    <li>Evaluate model performance against a baseline.</li>
+    <li>Produce a ranked queue of content opportunities for review.</li>
+  </ul>
+
+  <h2>Methodology</h2>
+  <p>The workflow uses historical performance data to generate features and evaluate prioritization strategies. Any future-decline target must be defined using a future observation window, while predictors must exclude information from that window. Model and baseline results should be compared on the same evaluation population.</p>
+
+  <h2>Results and artifacts</h2>
+  <p>Use the project artifacts below to inspect the generated recommendations and evaluation results.</p>
+  <ul>
+    <li><a href="ranked_recommendations_public.csv">Ranked recommendations (CSV)</a></li>
+    <li><a href="model_vs_baseline_metrics.csv">Model vs. baseline metrics (CSV)</a></li>
+    <li><a href="evaluation_metrics.json">Evaluation metrics (JSON)</a></li>
+    <li><a href="model_vs_baseline.png">Model vs. baseline chart</a></li>
+    <li><a href="ranked_recommendations.png">Ranked recommendations chart</a></li>
+  </ul>
+
+  <div class="note">
+    <strong>Interpretation note:</strong> Final quantitative claims should be added only after checking the actual evaluation files. Recommendations are decision-support candidates, not guaranteed outcomes.
+  </div>
+
+  <h2>Limitations</h2>
+  <p>Historical associations do not establish causality. Results may depend on data coverage, class balance, feature availability, and the evaluation period. Recommendations should be reviewed before implementation.</p>
+
+  <h2>Reproducibility</h2>
+  <p>See the repository README and project notebooks for implementation details, data definitions, and execution instructions.</p>
+
+  <footer>
+    <p>FlyRank SEO Research · ML Capstone</p>
+  </footer>
+</body>
+</html>
