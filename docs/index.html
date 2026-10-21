@@ -37,6 +37,29 @@
   <p>The workflow uses historical performance data to generate features and evaluate prioritization strategies. Any future-decline target must be defined using a future observation window, while predictors must exclude information from that window. Model and baseline results should be compared on the same evaluation population.</p>
 
   <h2>Results and artifacts</h2>
+  
+<div class="note">
+  <h3>Model Evaluation</h3>
+  <p><strong>ROC-AUC:</strong> 0.668</p>
+  <p><strong>Precision@20:</strong> 60% (12 of the top 20 reviewed items).</p>
+  <p>The logistic regression model outperformed the baseline on the held-out test clients in the saved evaluation.</p>
+</div>
+
+<h3>Evaluation charts</h3>
+<figure>
+  <img src="model_vs_baseline.png"
+       alt="Model versus baseline evaluation chart"
+       style="max-width:100%;height:auto;">
+  <figcaption>Model versus baseline performance.</figcaption>
+</figure>
+
+<figure>
+  <img src="ranked_recommendations.png"
+       alt="Ranked content recommendations chart"
+       style="max-width:100%;height:auto;">
+  <figcaption>Ranked content recommendations.</figcaption>
+</figure>
+
   <p>Use the project artifacts below to inspect the generated recommendations and evaluation results.</p>
   <ul>
     <li><a href="ranked_recommendations_public.csv">Ranked recommendations (CSV)</a></li>
